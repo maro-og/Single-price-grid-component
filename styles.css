@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 480px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(128, 128, 128, 0.648);
+    overflow: hidden;
+    margin: 1.3rem;
+}
+
+.box {
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+.join {
+    background-color: #fff;
+}
+
+.join h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 26px;
+    margin-top: -10px;
+    margin-bottom: 1rem;
+}
+
+.join h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 19.5px;
+    margin-bottom: 0.8rem;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+}
+
+.sub {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+}
+
+.sub h3 {
+    margin-top: -8px;
+    margin-bottom: 0.5rem;
+    }
+
+    .sub h4:first-of-type {
+        display: flex;
+        align-items: center;
+    }
+
+    .sub h4 .price {
+        font-size: 2rem;
+        margin-right: 0.7rem;
+    }
+
+    .sub h4 .per {
+        font-weight: 400;
+        color: hsla(203, 44%, 93%, 0.662);
+    }
+
+    .sub h4:last-of-type {
+        font-weight: 400;
+        margin-bottom: 2.7rem;
+    }
+
+    button {
+        color: white;
+        font: inherit;
+        font-size: 1.2rem;
+        background-color: hsl(71, 73%, 54%);
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        cursor: pointer;
+        border-radius: 0.4rem;
+        border: none;
+        box-shadow: 2px 3px 10px rgba(129, 128, 128, 0.541);
+    }
+
+    button:hover {
+        background-color: hsla(179, 61%, 67%, 0.785);
+    }
+
+.why {
+    background-color: hsla(179, 61%, 44%, 0.785);
+    color: white;
+}
+
+.why h3 {
+    margin-top: -8px;
+    margin-bottom: 1rem;
+}
+
+.why ul li {
+    list-style: none;
+    color: rgba(255, 255, 255, 0.895);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 650px;
+    }
+    
+    .wrapper {
+        grid-template-columns: 50% 50%;
+    }
+
+    .join {
+        grid-column: 1/3;
+    }
+
+    .sub {
+        grid-column: 1/2;
+    }
+
+    .why {
+        grid-column: 2/3;
+    }
